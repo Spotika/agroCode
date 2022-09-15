@@ -1,0 +1,53 @@
+.header {
+    height: 65px;
+    background-color: #009270;
+    display: flex;
+    align-items: center;
+    &__container {
+        display: flex;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        font-size: 25px;
+        color: #f1f1f1;
+        display: inline;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        text-transform: uppercase;
+        color: #f1f1f1;
+        font-size: 17px;
+        a:visited {
+            color: #f1f1f1;
+        }
+    }
+}
+
+.container {
+    display: flex;
+}
+
+
+.content {
+    height: 100%;
+    &__column {
+        &__description {
+            display: flex;
+        }
+        &__sliders {
+            display: flex;
+        }
+        background-color: #8e8e8e;
+    }
+
+    &__map {
+        
+        background-color: #ffffff11;
+    }
+}

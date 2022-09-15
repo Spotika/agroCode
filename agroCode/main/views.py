@@ -6,3 +6,8 @@ from django.shortcuts import redirect
 
 def home(request):
     return render(request, 'main/home.html')
+
+
+
+def about(request):
+    pass
