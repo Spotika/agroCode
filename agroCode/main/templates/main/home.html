@@ -4,7 +4,10 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
 <script src="https://api-maps.yandex.ru/2.1/?apikey=33eb6705-547e-48da-bf06-53cf7ac25aa7&lang=ru_RU" type="text/javascript"></script>
-<script src="{% static '/main/js/index.js'}"></script>
+<script>
+    var tilePath = '{% static "main/img/tiles/" %}'
+</script>
+<script type="text/javascript" src="{% static 'main/js/index.js' %}"></script>
 {% endblock %}
 
 
