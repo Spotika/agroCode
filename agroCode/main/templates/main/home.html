@@ -1,8 +1,10 @@
 {% extends 'main/main.html' %}
-{% load static %}
 
 {% block meta %}
+{% load static %}
 <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+<script src="https://api-maps.yandex.ru/2.1/?apikey=33eb6705-547e-48da-bf06-53cf7ac25aa7&lang=ru_RU" type="text/javascript"></script>
+<script src="{% static '/main/js/index.js'}"></script>
 {% endblock %}
 
 
@@ -18,7 +20,7 @@ Home
             <div class="content__column__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit tempore ut voluptatum, inventore itaque dolores laboriosam sit hic veritatis doloribus iusto impedit distinctio ea sequi at aliquam facilis dicta suscipit natus, deleniti quam facere obcaecati veniam. Error aperiam molestiae accusamus itaque similique pariatur! Quas fugiat nihil autem! Sunt, illum.</div>
             <div class="content__column__sliders"></div>
         </div>
-        <div class="content__map"></div>
+        <div class="content__map" id="map"></div>
     </div>
 </div>
 {% endblock %}

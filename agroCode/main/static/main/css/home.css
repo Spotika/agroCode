@@ -24,7 +24,8 @@
     font-size: 17px;
     flex-grow: 1; }
     .header__links a {
-      margin-left: 5%; }
+      margin-left: 5%;
+      color: #f1f1f1; }
     .header__links a:visited {
       color: #f1f1f1; }
 
