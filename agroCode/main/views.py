@@ -6,9 +6,12 @@ from . import methods
 
 def home(request):
 
+
+    if request.method == 'POST':
+        print(request.POST.getlist('points[]'))
+
     Map = methods.CustomMap()
     Map.crop_output()
-    print("cropped")
     return render(request, 'main/home.html')
 
 

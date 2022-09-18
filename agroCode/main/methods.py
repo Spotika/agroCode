@@ -14,7 +14,7 @@ class CustomMap:
 
 
     tileSize = 4096
-    mapZoom = [4, 5, 6, 7, 8]
+    mapZoom = [4, 5, 6, 7]
     # startD = tileSize / 4
 
     def __init__(self):
@@ -34,5 +34,4 @@ class CustomMap:
                     savePath = self.staticPath + self.outputTilePath.replace("z", str(self.mapZoom[zoom])) + self.tileName.replace("x", str(j)).replace("y", str(i))
                     # save file
                     cv2.imwrite(savePath, croppedTile)
-            print(zoomedTile)
 

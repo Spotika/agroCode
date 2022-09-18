@@ -2,12 +2,22 @@
 
 {% block meta %}
 {% load static %}
+<!-- <meta name="csrf-token" content="{{ csrf_token }}"> -->
 <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
 <script src="https://api-maps.yandex.ru/2.1/?apikey=33eb6705-547e-48da-bf06-53cf7ac25aa7&lang=ru_RU" type="text/javascript"></script>
 <script>
     var tilePath = '{% static "main/img/tiles/" %}'
+    var geoJsonPath = '{% static "main/js/VINEYARDS.geojson" %}'
+    var POSTurl = '{% url "home" %}'
+    var CSRF_TOKEN = '{{ csrf_token }}'
 </script>
+<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'main/js/index.js' %}"></script>
+<script>
+
+
+
+</script>
 {% endblock %}
 
 
@@ -21,7 +31,9 @@ Home
     <div class="content__container">
         <div class="content__column">
             <div class="content__column__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit tempore ut voluptatum, inventore itaque dolores laboriosam sit hic veritatis doloribus iusto impedit distinctio ea sequi at aliquam facilis dicta suscipit natus, deleniti quam facere obcaecati veniam. Error aperiam molestiae accusamus itaque similique pariatur! Quas fugiat nihil autem! Sunt, illum.</div>
-            <div class="content__column__sliders"></div>
+            <div class="content__column__sliders">
+                <button onclick="upl()">HUI</button>
+            </div>
         </div>
         <div class="content__map" id="map"></div>
     </div>
