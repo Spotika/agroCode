@@ -30,9 +30,21 @@ Home
 <div class="content">
     <div class="content__container">
         <div class="content__column">
-            <div class="content__column__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit tempore ut voluptatum, inventore itaque dolores laboriosam sit hic veritatis doloribus iusto impedit distinctio ea sequi at aliquam facilis dicta suscipit natus, deleniti quam facere obcaecati veniam. Error aperiam molestiae accusamus itaque similique pariatur! Quas fugiat nihil autem! Sunt, illum.</div>
+            <div class="content__column__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos placeat in tempora expedita vitae pariatur impedit veniam quidem. Corrupti consectetur iusto ducimus ipsum et dignissimos qui, adipisci expedita perferendis odio! Non, hic sint repellendus vero cupiditate repudiandae dolorum rem distinctio molestias consequatur obcaecati praesentium, saepe ipsam ratione iure! Exercitationem ex enim unde aperiam quas, odit eligendi laboriosam neque laborum qui vero velit tenetur obcaecati explicabo, esse eum labore numquam quo, repellat cupiditate illo quibusdam maiores doloremque. Magni ex quas nostrum libero ut inventore necessitatibus nisi veritatis quasi nesciunt laboriosam ipsam neque doloremque accusantium, perspiciatis esse assumenda! Vero sunt excepturi sed.</div>
             <div class="content__column__sliders">
-                <button onclick="upl()">HUI</button>
+                <div class="wrapper">
+                    <h1>Рельеф</h1>
+                    <input class="slider" type="range" valmin="0" valmax="5" step="0.25" name="temp">
+                </div>
+                <div class="wrapper">
+                    <h1>Климат</h1>
+                    <input class="slider" type="range" valmin="0" valmax="5" step="0.25" name="temp">
+                </div>
+                <div class="wrapper">
+                    <h1>Тип местности</h1>
+                    <input class="slider" type="range" valmin="0" valmax="5" step="0.25" name="temp">
+                </div>
+                <button class="btn" onclick="upl()">Расчитать</button>
             </div>
         </div>
         <div class="content__map" id="map"></div>
